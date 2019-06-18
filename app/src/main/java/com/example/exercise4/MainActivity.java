@@ -24,11 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
         this.ip = ((EditText)findViewById(R.id.ipEditText)).getText().toString();
         this.port = ((EditText)findViewById(R.id.portTextEdit)).getText().toString();
-        Intent intent = new Intent(this,
-                Joystick.class);
+        Intent intent = new Intent(this, Joystick.class);
         intent.putExtra("ip", ip);
         intent.putExtra("port", port);
-
         startActivity(intent);
     }
 
